@@ -1,18 +1,15 @@
 Tambahkan Perubahan ke Staging Area
 
 Setelah Anda melakukan perubahan, tambahkan file atau folder yang telah diubah ke staging area dengan perintah:
-bash
 
-Verify
 
 
 Run
 Copy code
 git add .
 Perintah ini akan menambahkan semua perubahan. Jika Anda hanya ingin menambahkan folder tertentu, Anda bisa menggunakan:
-bash
 
-Verify
+
 
 
 Run
@@ -21,9 +18,8 @@ git add nama_folder/
 Buat Commit dengan Pesan Deskriptif
 
 Setelah menambahkan perubahan, buat commit dengan pesan yang menjelaskan perubahan yang telah Anda buat:
-bash
 
-Verify
+
 
 
 Run
@@ -32,9 +28,8 @@ git commit -m "Pesan deskriptif tentang perubahan"
 Dorong Perubahan ke Repositori di GitHub
 
 Terakhir, dorong perubahan ke repositori GitHub Anda dengan perintah:
-bash
+git push origin master
 
-Verify
 
 
 Run
