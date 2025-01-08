@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelas Industri</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/kelas.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        .main-sub {
+            padding-bottom: 2rem;
+            background-color: rgb(245, 244, 244);
+            display: flex; 
+            justify-content: space-around; 
+            flex-wrap: wrap; 
+        }
+
+        .nav_link a{
+    color: white;
+  }
+        .sub {
+            padding: 20px;
+            text-align: left;
+            flex: 1; 
+            min-width: 200px; 
+            max-width: 300px;;
+            
+        }
+
+        .sub a{
+            display: inline-block;
+            background-color: orange;
+            border-radius: 40px;
+            padding:12px;
+            font-size: 20px;   
+            color: black;
+        }
+
+        .sub p{
+            padding: 10px;
+            text-align: left;
+            margin: 0 auto;
+            font-weight: lighter;
+            font-size: 15px;
+        }
+
+        .garis{
+            width: 80%; 
+            margin: 10px auto; 
+            border: 1px solid #ccc;
+        }
+        
+        .sub ul{
+            color: rgb(102, 102, 102);
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+        .main-sub {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sub {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .nav__menu {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav__list {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .dropdown__menu {
+            position: static;
+            display: none;
+        }
+
+        .dropdown__item:hover .dropdown__menu {
+            display: block;
+        }
+
+        .main-content {
+            text-align: center;
+        }
+
+        .main-text-bubble {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text-bubble, .sec-text-bubble {
+            margin-bottom: 10px;
+        }
+
+        .background-white .text-background-white {
+            text-align: center;
+        }
+
+        .main-isi .sub-isi {
+            text-align: center;
+        }
+
+        .footer .row {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer .col-md-4 {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .nav__logo {
+            font-size: 1.5rem;
+        }
+
+        .main-content h1 {
+            font-size: 1.5rem;
+        }
+
+        .main-content p {
+            font-size: 1rem;
+        }
+
+        .sub a {
+            font-size: 1rem;
+            padding: 10px;
+        }
+
+        .sub p {
+            font-size: 0.9rem;
+        }
+
+        .sub ul {
+            font-size: 0.8rem;
+        }
+
+        .footer h4 {
+            font-size: 1.2rem;
+        }
+
+        .footer ul {
+            padding-left: 0;
+        }
+
+        .footer li {
+            list-style-type: none;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo"> BIMBELON </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Program <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li><a href="bootcamp.html" class="dropdown__link">BootCamp</a></li>
+                            <li><a href="free-class.html" class="dropdown__link"> Free Class </a></li>
+                            <li class="dropdown__subitem">
+                                <a class="dropdown__link" href="report.html">Reports</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Layanan Kampus <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="pelatihanPersiapan.html" class="dropdown__link">
+                                    Pelatihan Persiapan Karier
+                                </a>
+                            </li>
+                            <li>
+                                <a href="kelasIndustri.html" class="dropdown__link">
+                                    Kelas Industri
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__item">
+                        <div class="nav__link"><a href="contact.html" style="color: #fff;">Contact</a>  
+                        </div>
+                     </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar -->
+
+    <!-- main -->
+    <main>
+        <video autoplay muted loop plays-inline class="background-clip" src="./asset/background/cyber.mp4" type="video/mp4"></video>
+        <div>
+            <div class="main-container">
+                <div class="main-content">
+                    <h1>Dukung Kesuksesan Karier Mahasiswa Anda dengan Program Kampus Fleksibel</h1>
+                    <p class="highlight">Tingkatkan kemampuan digital dan prospek karier mahasiswa Anda, mulai dari program SKPI, sertifikasi BNSP, dan ujian sertifikiasi berstandar internasional yang sesuai dengan kebutuhan kampus Anda.</p>
+                    <div class="main-text-bubble">
+                        <div class="sub-text-bubble">
+                            <div class="text-bubble">
+                                <div>
+                                    <a href="#">Hubungi Kami</a>
+                                </div>
+                            </div>
+                            <div class="sec-text-bubble">
+                                <div>
+                                    <a href="#">isi formulir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="background-white">
+            <div class="sub-background-white">
+                <div class="text-background-white">
+                    <h1>Saat Ini</h1>
+                    <p>BIMBELON telah berhasil menempatkan 94% siswanya di karir yang diinginkan. Namun, kami tidak berhenti di situ. BIMBELON juga telah mendapatkan kepercayaan dari berbagai universitas negeri dan swasta di Indonesia untuk bekerja sama dalam menghasilkan lulusan yang unggul dan berkualitas tinggi.</p>
+                </div>
+            </div>
+
+            <div class="main-isi">
+                <div class="sub-isi">
+                    <div class="isi">
+                        <h1>Pilihan Program Terbaik untuk</h1>
+                        <h1 style="color:rgb(32, 188, 188);">Mahasiswa Kampus Anda</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-sub">
+                <div class="sec-main-sub">
+                    <div class="sub">
+                            <a href="#">Microsoft Excel Training</a>
+                            <p>Pelatihan untuk semua kalangan dalam memahami ilmu dan praktek Microsoft Excel / Microsoft 365 serta penerapannya dalam pekerjaan.</p>
+                            <div>
+                                <hr class="garis" style="margin-bottom: 18px;">
+                                    <div class="sub" style="padding: 0 10px;">
+                                        <ul>
+                                            <li>
+                                                 Online / Offline Class
+                                            </li>
+                                        <li>
+                                                Basic - Advance
+                                        </li>
+                                            <li>
+                                                Customizable Study Schedule
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub">
+                        <div>
+                            <a href="#">Digital Marketing</a>
+                            <p>Pelatihan untuk meningkatkan keahlian paid marketing seperti Social Media Ads, Search Engine Marketing, dan marketplace marketing.</p>
+                            <div>
+                                <hr class="garis" style="margin-bottom: 18px;">
+                                    <div class="sub" style="padding: 0 10px;">
+                                        <ul>
+                                            <li>
+                                                 Online / Offline Class
+                                            </li>
+                                        <li>
+                                                Basic - Advance
+                                        </li>
+                                            <li>
+                                                Customizable Study Schedule
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub">
+                        <div>
+                            <a href="#">Data Analytics</a>
+                            <p>Pelatihan untuk meningkatkan keahlian dalam melakukan analisis dan visualisasi data.</p>
+                            <div>
+                                <hr class="garis" style="margin: 46px 23px;">
+                                    <div class="sub" style="margin: -50px 0;">
+                                        <ul>
+                                            <li>
+                                                 Online / Offline Class
+                                            </li>
+                                        <li>
+                                                Basic - Advance
+                                        </li>
+                                            <li>
+                                                Customizable Study Schedule
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub">
+                        <div>
+                            <a href="#">UI UX Design</a>
+                            <p>Pelatihan untuk memahami ilmu dan praktek User Researcher atau Interface Designer dalam penerapannya di dunia kerja.</p>
+                            <div>
+                                <hr class="garis" style="margin: 28px 23px ;">
+                                    <div class="sub" style="margin: -33px 0;">
+                                        <ul>
+                                            <li>
+                                                 Online / Offline Class
+                                            </li>
+                                        <li>
+                                                Basic - Advance
+                                        </li>
+                                            <li>
+                                                Customizable Study Schedule
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>Web bootcamp</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="bootcamp.html">Bootcamp</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Tugas Data Komputasi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+     <script src="script.js"></script>
+</body>
+</html>

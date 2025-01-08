@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+    <style>
+       /* main */
+
+  .background-clip{
+    position: absolute;
+    z-index: -1;
+  }
+
+  @media (min-aspect-ratio: 16/9){
+    .background-clip{
+       width: 100%;
+       height: auto;
+    }
+ }
+
+ @media (max-aspect-ratio: 16/9){
+  .background-clip{
+     width: auto;
+     height: 100%;
+  }
+}
+
+  .main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+  }
+
+  .main-content a{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 15px 25px;
+    border-radius: 2rem;
+    transition: 0,3s;
+    color: white;
+  }
+
+  .main-content :hover{
+    background-color: #ffffff;
+    color: black;
+  }
+
+  .sec-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 50px;
+    margin: 0;
+    
+  }
+
+  .sec-content {
+    max-width: 800px; 
+    width: 100%;
+    text-align: center;
+    
+  }
+
+  .sec-content h1{
+    font-size: 2.5rem; 
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: justify;
+  }
+
+  .sec-content p{
+    font-size: 1.2rem; 
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: justify;
+  }
+  .nav_link a{
+    color: white;
+  }
+
+  
+  /* main */
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <header class="header">
+        <nav class="nav container">
+           <div class="nav__data">
+              <a href="index.html" class="nav__logo"> BIMBELON </a>
+              
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
+
+           <div class="show-menu">
+              <ul class="nav__list">
+                 <li><a href="index.html" class="nav__link">Home</a></li>
+
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Program <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="bootcamp.html" class="dropdown__link">BootCamp</a>                          
+                       </li>
+
+                       <li>
+                          <a href="free-class.html" class="dropdown__link"> Free Class </a>
+                       </li>
+
+                       <li class="dropdown__subitem">
+                          <a class="dropdown__link" href="report.html">Reports</a> 
+                       </li>
+                    </ul>
+                 </li>
+
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Layanan Kampus <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="pelatihanPersiapan.html" class="dropdown__link">
+                            Pelatihan Persiapan Karier
+                          </a>                          
+                       </li>
+                       <li>
+                          <a href="kelasIndustri.html" class="dropdown__link">
+                            Kelas Industri
+                          </a>
+                       </li>
+                    </ul>
+                 </li>
+
+                 <li class="dropdown__item">
+                    <div class="nav__link"><a href="contact.html" style="color: #fff;">Contact</a>  
+                    </div>
+                 </li>
+
+              </ul>
+           </div>
+        </nav>
+     </header>
+    <!-- navbar -->
+
+    <!-- main -->
+    <main>
+      <video autoplay loop muted plays-inline class="background-clip">
+          <source src="./asset/background/Circuitboard Animation 02.mp4" type="video/mp4">
+      </video>
+      <div class="main-container">
+          <div class="main-content">
+              <a href="bootcamp.html">Start BootCamp</a>
+          </div>
+      </div>
+  
+      <div class="sec-container" style="background-color: rgb(14, 20, 31);">
+          <div class="sec-content">
+              <h1>Tentang Bootcamp Digital Marketing</h1>
+              <p>Bootcamp Digital Marketing BIMBELON adalah pelatihan online yang dirancang untuk membekalimu keterampilan digital marketing terlengkap, mulai dari SEO, Content Marketing, Social Media Ads, CRM, hingga analisis performa campaign dengan berbagai tools.</p>
+              <br>
+              <p>Dengan bimbingan expert, kamu akan mendapatkan hands-on practice, kesempatan magang, serta membangun portofolio yang siap mendukung kariermu di bidang digital marketing.</p>
+          </div>
+      </div>
+  </main>
+    <!-- main -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <h4>About Us</h4>
+                  <p>Web bootcamp</p>
+              </div>
+              <div class="col-md-4">
+                  <h4>Quick Links</h4>
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="bootcamp.html">Bootcamp</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                  <h4>Follow Us</h4>
+                  <ul>
+                      <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="copyright">
+              <p>&copy; 2025 Tugas Data Komputasi. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+    <!-- footer -->
+
+    <script link="script.js"></script>  
+</body>
+</html>

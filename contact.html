@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Profile Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .background-clip{
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            opacity: 25%;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: nowrap;
+            justify-content: center;
+            max-width: 1000px;
+            width: 100%;
+            padding: 150px;
+            gap: 90px;
+            margin: auto 0px;
+        }
+
+        .profile-container {
+            color: white;
+            background-color: #18172d;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(33.33% - 20px);
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .profile-name ul{
+            margin: 20px;
+            padding: 10px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: hsl(223, 37%, 11%);
+            color: #fff;
+            padding: 40px 0 20px;
+            margin-top: auto;
+        }
+
+        .footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer .col-md-4 {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer h4 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer ul li a:hover {
+            color: #007bff;
+        }
+
+        .footer .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-container {
+                width: 100%;
+                max-width: 400px;
+                margin-bottom: 20px;
+            }
+
+            .footer .row {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer .col-md-4 {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <header class="header">
+        <nav class="nav container">
+           <div class="nav__data">
+              <a href="index.html" class="nav__logo"> BIMBELON </a>
+              
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
+    
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li><a href="index.html" class="nav__link">Home</a></li>
+    
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Program <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+    
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="bootcamp.html" class="dropdown__link">BootCamp</a>                          
+                       </li>
+    
+                       <li>
+                          <a href="free-class.html" class="dropdown__link"> Free Class </a>
+                       </li>
+    
+                       <li class="dropdown__subitem">
+                          <a class="dropdown__link" href="report.html">Reports</a> 
+                       </li>
+                    </ul>
+                 </li>
+    
+                 <li class="dropdown__item">
+                  <div class="nav__link">Layanan Kampus <i class="ri-arrow-down-s-line dropdown__arrow"></i></div>
+                  <ul class="dropdown__menu">
+                     <li><a href="pelatihanPersiapan.html" class="dropdown__link">Pelatihan Persiapan Karier</a></li>
+                     <li><a href="#" class="dropdown__link">Kelas Industri</a></li>
+                  </ul>
+               </li>
+    
+                 <li class="dropdown__item">
+                  <div class="nav__link"><a href="contact.html" style="color: white;">Contact</a>  
+                  </div>
+               </li>
+              </ul>
+           </div>
+        </nav>
+     </header>
+    <!-- navbar -->
+    
+
+    <!-- main -->
+    <main>
+    <video autoplay muted loop plays-inline class="background-clip" src="./asset/background/background2.mp4" type="video/mp4"></video>
+    <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="profile-container">
+            <img src="./asset/gambar/foto1.png" alt="Profile Photo" class="profile-image" width="60%">
+            <div class="profile-name">
+                <ul>
+                    <li>
+                        Emil Fatha  
+                    </li>
+                    <li>
+                        A11.2024.15562
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="profile-container">
+            <img src="./asset/gambar/foto3.png" alt="Profile Photo" class="profile-image" width="60%">
+            <div class="profile-name">
+                <ul>
+                    <li>
+                        Rizki Ardiansyah
+                    </li>
+                    <li>
+                        A11.2024.15546
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="profile-container">
+            <img src="./asset/gambar/foto2.png" alt="Profile Photo" class="profile-image" width="60%">
+            <div class="profile-name">
+                <ul>
+                    <li>
+                        Sholihul Muayyad  
+                    </li>
+                    <li>
+                        A11.2024.15564
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </main>
+    <!-- main -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>Web bootcamp </p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="bootcamp.html">Bootcamp</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Tugas Data Komputasi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

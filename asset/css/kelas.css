@@ -1,0 +1,259 @@
+body {
+    background-color: black;
+}
+
+.background-clip {
+    position: absolute;
+    z-index: -1;
+    opacity: 40%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .background-clip {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.main-content {
+    color: white;
+    font-size: 30px;
+    padding: 150px;
+    margin: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.sec-content {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.sec-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: justify;
+}
+
+.sec-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: justify;
+}
+
+.main-text {
+    display: flex;
+}
+
+.sub-background-white {
+    background-color: white;
+    padding: 4rem 9rem;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.text-background-white {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.sub-text-bubble {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-text-bubble a {
+    color: #ffffff;
+}
+
+.text-bubble {
+    background-color: orange;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.sec-text-bubble {
+    background-color: rgb(0, 2, 112);
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.isi {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgb(245, 244, 244);
+    gap: 10px;
+}
+
+.isi h1 {
+    font-size: 2rem; /* Ukuran default */
+}
+
+@media (max-width: 768px) {
+    .isi h1 {
+        font-size: 1.5rem; /* Ukuran untuk mobile */
+    }
+
+    .main-content {
+        padding: 30px;
+        margin: 50px;
+        font-size: 20px;
+    }
+
+    .sec-content h1 {
+        font-size: 1.5rem; /* Ukuran untuk mobile */
+    }
+
+    .sec-content p {
+        font-size: 1rem;
+    }
+
+    .sub-background-white {
+        padding: 3rem 1rem;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+    }
+
+    .text-background-white {
+        font-size: 18px;
+    }
+
+    .isi {
+        padding: 30px;
+        flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+        text-align: center;
+    }
+
+    .sub-text-bubble {
+        flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+        gap: 10px;
+    }
+
+    .text-bubble,
+    .sec-text-bubble {
+        padding: 15px;
+    }
+}
+
+/* Main container styles */
+.main-isi2 {
+    background-color: rgb(245, 244, 244);
+    padding: 40px 20px;
+}
+
+/* Sub container styles */
+.sub-isi2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual column styles */
+.isi2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Content container styles */
+.isi2-dalem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Text content styles */
+.isi2-dalem .head-isi2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.isi2-dalem .p-isi {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.isi2-dalem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Text content styles */
+.isi2-dalem-right .head-isi2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.isi2-dalem-right .p-isi {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: right;
+}
+.nav_link a{
+   color: white;
+ }
+
+/* Middle column with images */
+.isi2:nth-child(2) {
+    max-width: 400px;
+}
+
+.isi2:nth-child(2) .isi2-dalem {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.isi2:nth-child(2) img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 968px) {
+    .sub-isi2 {
+        flex-direction: column;
+    }
+    
+    .isi2:nth-child(2) {
+        max-width: 100%;
+    }
+    
+    .isi2-dalem {
+        flex-direction: column;
+        text-align: center;
+    }
+}
